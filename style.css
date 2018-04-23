@@ -1,0 +1,191 @@
+html,
+body {
+    height: 100%;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav > a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-nav > a {
+    align-self: auto;
+}
+
+.btn-container {
+    margin: 15px;
+}
+
+.section {
+    padding-top: 70px;
+    padding-right: 15px;
+    padding-bottom: 75px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.section>h1 {
+    text-align: center;
+}
+
+#education {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#work {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#skills {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contact {}
+
+.navbar .navbar-nav>.active {
+    color: white;
+    background: grey;
+}
+
+.welcome {
+    height: calc(100%);
+    padding: 15px;
+    background-image: url("/img/beach.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.text {
+    color: white;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20%;
+}
+
+div.skill {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    margin: 15px;
+}
+
+div.skill img {
+    width: 150px;
+    height: 150px;
+}
+
+div.desc {
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.contact-container {
+    margin: 32px auto 8px auto;
+}
+
+.contact {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+div.contact img {
+    width: 80;
+    height: 80px;
+    margin: 15px;
+}
+
+/* 
+Resources from online 
+*/
+
+/* http://jsfiddle.net/pDs4C/ */
+
+.faded-line {
+    width: 90%;
+    text-align: center;
+    /* margin: 25px 0; */
+    margin: 0 auto;
+    height: 1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+/* https://codepen.io/NielsVoogt/pen/MbMMxv */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item p {
+    font-size: 1rem;
+}
+
+.timeline-item::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.timeline-item:last-child {
+    -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}

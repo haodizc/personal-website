@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hiromichi's Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navbar-center">
+                <a class="nav-item nav-link" href="#education">Education</a>
+                <a class="nav-item nav-link" href="#work">Work Experience</a>
+                <a class="nav-item nav-link" href="#skills">Skills</a>
+                <a class="nav-item nav-link disabled" href="#eecs183">EECS 183</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="welcome" class="welcome">
+        <!-- <div class="overlay"></div> -->
+        <div class="text">
+            <h1>Welcome to Hiromichi's Personal Website!</h2>
+
+            <!-- <div class="btn-container ">
+                <button type="button" class="btn-lg btn-info">
+                    <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;Resume</button>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="section" id="education">
+        <h1>Education</h1>
+
+        <div class="timeline-item" date-is='2014-2018'>
+            <h5>Ann Arbor, MI</h5>
+            <h2>University of Michigan Ann Arbor</h2>
+            <h4>Bachelor of Science (BS) in Computer Science and Economics</h4>
+            <p>
+                I was an instructional aide (IA) for
+                <a href="https://eecs183.org/" target="_blank">EECS 183</a>, the introductory computer science course at the University of Michigan with over 1000 students.
+            </p>
+        </div>
+
+        <div class="timeline-item" date-is='1999-2014'>
+            <h5>Kobe, Japan</h5>
+            <h2>Canaidan Academy</h2>
+            <h4>International Baccalaureate Diploma</h4>
+            <p>
+                Canadian Academy is a pre-K-12 international school in Kobe Japan. I completed the IB diploma with Biology (HL), Economics
+                (HL), Mathematics (HL), and English Language and Literature (HL), Japanese Language and Literature (SL),
+                Chemistry (SL).
+            </p>
+        </div>
+
+    </div>
+
+    <hr class="faded-line" />
+
+    <div class="section" id="work">
+        <h1>Work Experience</h1>
+
+        <div class="timeline-item" date-is='May 2017 - August 2017'>
+            <h5>San Francisco, CA</h5>
+            <h2>Salesforce</h2>
+            <h4>Software Engineering Intern</h4>
+            <p>
+                <ul>
+                    <li>
+                        Created Git work flow Python CLI installed on Jenkins, which automated manual tasks.
+                    </li>
+                    <li>
+                        Production support through migration of Jenkins from Ant to Maven and debugging build failures.
+                    </li>
+                    <li>
+                        Collaborated in preparation of internal tech talks on Salesforce’s SFDX tool to increase automation of org creation life
+                        cycle.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="timeline-item" date-is='June 2016 - July 2016'>
+            <h2>Schenider Electric</h2>
+            <h5>Osaka, Japan</h5>
+            <h4>IPO (Information, Process and Organization) Intern</h4>
+            <p>
+                <ul>
+                    <li>
+                        Worked on a workflow solution named bFO OFW App developed on Salesforce.
+                    </li>
+                    <li>
+                        Performed end-user testing (UAT).
+                    </li>
+                    <li>
+                        Created an admin manual and admin certification test for certified administrators for the App.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+    </div>
+
+    <hr class="faded-line" />
+
+    <div class="section" id="skills">
+        <h1>Skills</h1>
+        <br>
+        <h3>Languages</h3>
+        <br>
+        <div class="skill">
+            <img src="/img/cpp_logo.png" alt="cpp_logo">
+            <div class="desc">C/C++</div>
+        </div>
+        <div class="skill">
+            <img src="/img/python_logo.png" alt="python_logo">
+            <div class="desc">Python</div>
+        </div>
+        <div class="skill">
+            <img src="/img/swift_logo.png" alt="swift_logo">
+            <div class="desc">Swift</div>
+        </div>
+        <div class="skill">
+            <img src="/img/go_logo.png" alt="go_logo">
+            <div class="desc">Go</div>
+        </div>
+        <div class="skill">
+            <img src="/img/bash_logo.png" alt="bash_logo">
+            <div class="desc">Bash</div>
+        </div>
+        <div class="skill">
+            <img src="/img/html_logo.png" alt="html_logo">
+            <div class="desc">HTML5</div>
+        </div>
+        <div class="skill">
+            <img src="/img/css_logo.svg" alt="css_logo">
+            <div class="desc">CSS3</div>
+        </div>
+        <div class="skill">
+            <img src="/img/js_logo.png" alt="js_logo">
+            <div class="desc">Javascript</div>
+        </div>
+        <div class="skill">
+            <img src="/img/sql_logo.png" alt="sql_logo">
+            <div class="desc">SQL</div>
+        </div>
+        <br>
+        <br>
+        <h3>Frameworks/Tools</h3>
+        <div class="skill">
+            <img src="/img/flask_logo.png" alt="flask_logo">
+            <div class="desc">Flask</div>
+        </div>
+        <div class="skill">
+            <img src="/img/react_logo.png" alt="react_logo">
+            <div class="desc">React</div>
+        </div>
+        <div class="skill">
+            <img src="/img/meteor_logo.png" alt="meteor_logo">
+            <div class="desc">Meteor</div>
+        </div>
+        <div class="skill">
+            <img src="/img/mongo_logo.png" alt="mongo_logo">
+            <div class="desc">MongoDB</div>
+        </div>
+        <div class="skill">
+            <img src="/img/git_logo.png" alt="git_logo">
+            <div class="desc">Git</div>
+        </div>
+
+    </div>
+
+    <hr class="faded-line" />
+
+    <div class="section" id="eecs183">
+        <h1>EECS 183</h1>
+
+        <h2>Comming soon...</h1>
+    </div>
+
+    <hr class="faded-line" />
+
+    <div class="section" id="contact">
+        <h1>Contact</h1>
+
+        <div class="contact-container">
+            <div class="contact">
+                <img src="/img/email_icon.png" alt="email_icon">
+                <h3>Email</h3>
+                <a href="mailto:haodizc@umich.edu">haodizc@umich.edu</a>
+            </div>
+            <div class="contact">
+                <img src="/img/linkedin_icon.png" alt="linkedin_icon">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/hiromichi-cho/" target="_blank">
+                    <p>/hiromichi-cho</p>
+                </a>
+            </div>
+            <div class="contact">
+                <img src="/img/github_icon.svg" alt="github_icon">
+                <h3>Github</h3>
+                <a href="https://github.com/haodizc" target="_blank">
+                    <p>@haodizc</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: ".navbar",
+                offset: 50
+            });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#navbarNavAltMarkup a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</body>
+
+</html>
