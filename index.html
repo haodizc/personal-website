@@ -22,7 +22,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+        <a class="navbar-brand" href="/">
+            <i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,12 +39,17 @@
         </div>
     </nav>
 
+    <section id="section03" class="demo">
+        <a href="#education">
+            <span></span>Scroll</a>
+    </section>
+
     <div id="welcome" class="welcome">
         <!-- <div class="overlay"></div> -->
         <div class="text">
             <h1>Welcome to Hiromichi's Personal Website!</h2>
 
-            <!-- <div class="btn-container ">
+                <!-- <div class="btn-container ">
                 <button type="button" class="btn-lg btn-info">
                     <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;Resume</button>
             </div> -->
@@ -257,6 +263,28 @@
                     });
                 } // End if
             });
+
+            $("#section03 a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
         });
     </script>
 
