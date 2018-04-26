@@ -288,6 +288,12 @@
         });
     </script>
 
+    <script type="text/javascript">
+        var images = ['bkgd-1.jpg', 'bkgd-2.jpg', 'bkgd-3.jpg', 'bkgd-4.jpg', 'bkgd-5.jpg', 'bkgd-6.jpg', 'bkgd-7.jpg'];
+        document.getElementsByClassName('welcome')[0].style.backgroundImage = 'url(/img/' + images[Math.floor(Math.random() *
+            images.length)] + ')';
+    </script>
+
 </body>
 
 </html>
